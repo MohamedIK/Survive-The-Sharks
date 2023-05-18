@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Images/2307735-1605774549955_TM-03.jpg" type="Texture" id=1]
+[ext_resource path="res://Images/shark_PNG96511-2648471259.png" type="Texture" id=2]
+[ext_resource path="res://Images/cartoon-fish-clipart-md-620722086.png" type="Texture" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 27.8086
+height = 52.4191
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 58.0
+height = 130.0
 
 [node name="Game" type="Node2D"]
 
@@ -12,11 +22,39 @@ texture = ExtResource( 1 )
 [node name="Fish" type="Area2D" parent="."]
 
 [node name="Fish" type="Sprite" parent="Fish"]
+position = Vector2( 70, 200 )
+scale = Vector2( 0.12125, 0.180723 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fish"]
+position = Vector2( 70, 198 )
+rotation = 4.72294
+shape = SubResource( 1 )
 
 [node name="Shark" type="Area2D" parent="."]
 
 [node name="Shark" type="Sprite" parent="Shark"]
+position = Vector2( 662, 104 )
+scale = Vector2( 0.103988, 0.102313 )
+texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shark"]
+position = Vector2( 662, 104 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Left Wall" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Wall"]
+
+[node name="Right Wall" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
+
+[node name="Floor" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+
+[node name="Ceiling" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceiling"]
