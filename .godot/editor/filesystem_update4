@@ -2,3 +2,4 @@ res://default_env.tres
 res://Scenes/Game.tscn
 res://Scenes/Main Menu.tscn
 res://Scripts/Fish.gd
+res://Scripts/Shark.gd
