@@ -10,7 +10,6 @@ var speed = DEFAULT_SPEED
 
 var direction = Vector2.LEFT
 
-
 func _process(delta):
 	speed += delta * 1
 	position += speed * delta * direction

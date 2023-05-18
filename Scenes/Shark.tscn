@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://byx47bohmepk4"]
+
+[ext_resource type="Script" path="res://Scripts/SharkEnemy.gd" id="1_7y221"]
+[ext_resource type="Texture2D" uid="uid://utwnvwxet5qp" path="res://Images/shark_PNG96511-2648471259.png" id="2_orj7s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5r8rf"]
+radius = 29.0
+height = 104.0
+
+[node name="Shark" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_7y221")
+
+[node name="Shark" type="Sprite2D" parent="."]
+position = Vector2(130, 83)
+scale = Vector2(0.0430961, 0.0524911)
+texture = ExtResource("2_orj7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(130, 83)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_5r8rf")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

@@ -3,3 +3,8 @@ res://Scenes/Game.tscn
 res://Scenes/Main Menu.tscn
 res://Scripts/Fish.gd
 res://Scripts/Shark.gd
+res://Scripts/enemy.gd
+res://Scenes/Fish.tscn
+res://Scenes/Shark.tscn
+res://Scenes/Main.tscn
+res://Scripts/Main.gd

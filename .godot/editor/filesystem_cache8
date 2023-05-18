@@ -1,21 +1,24 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684439886
-default_env.tres::Environment::8725450974649646702::1684439898::0::1::::<><>::
+::res://::1684444077
+default_env.tres::Environment::8725450974649646702::1684444220::0::1::::<><>::
 icon.png::CompressedTexture2D::76872738419906588::1683784493::1684434681::1::::<><>::
 README.md::TextFile::-1::1683784393::0::1::::<><>::
-Shark.gd::GDScript::-1::1684434661::0::1::::<>Area2D<>::
 ::res://Images/::1684434682
 2307735-1605774549955_TM-03.jpg::CompressedTexture2D::3809458627512895854::1684420057::1684434681::1::::<><>::
 cartoon-fish-clipart-md-620722086.png::CompressedTexture2D::167968737903377702::1684418703::1684434681::1::::<><>::
 cliff-clipart-underwater-ocean-4.png::CompressedTexture2D::4782305881887021810::1684419033::1684434681::1::::<><>::
 shark_PNG96511-2648471259.png::CompressedTexture2D::1444360177276601567::1684418605::1684434682::1::::<><>::
 underwater-scene-with-fish-and-coral-reef-illustration-vector-3008036759.jpg::CompressedTexture2D::7255874200777443404::1684420003::1684434682::1::::<><>::
-::res://Scenes/::1684439886
-Game.tscn::PackedScene::4168097428717047472::1684439898::0::1::::<><>::uid://bujlhypbmw72i<>uid://utwnvwxet5qp<>res://Scripts/Fish.gd<>uid://cnmokggqi36y<>res://Scripts/FloorCeiling.gd<>res://Shark.gd<>res://Scripts/Right Wall.gd<>res://Scripts/Left Wall.gd
-Main Menu.tscn::PackedScene::7631498370708740271::1684439866::0::1::::<><>::res://Scripts/Main Menu.gd<>uid://dbm2gnk1h0k6o
-::res://Scripts/::1684439886
-Fish.gd::GDScript::-1::1684439809::0::1::::<>Area2D<>::
+::res://Scenes/::1684444077
+Game.tscn::PackedScene::2313891350896559007::1684442943::0::1::::<><>::uid://bujlhypbmw72i<>uid://utwnvwxet5qp<>res://Scripts/Fish.gd<>uid://cnmokggqi36y<>res://Scripts/FloorCeiling.gd<>res://Scripts/Right Wall.gd<>res://Scripts/Shark.gd<>res://Scripts/Left Wall.gd
+Main Menu.tscn::PackedScene::7631498370708740271::1684442943::0::1::::<><>::res://Scripts/Main Menu.gd<>uid://dbm2gnk1h0k6o
+Fish.tscn::PackedScene::2089025479678085457::1684444138::0::1::::<><>::uid://cnmokggqi36y<>res://Scripts/Fish.gd
+Shark.tscn::PackedScene::4120251632029308141::1684444220::0::1::::<><>::res://Scripts/Shark.gd<>uid://utwnvwxet5qp
+::res://Scripts/::1684443572
+Fish.gd::GDScript::-1::1684442675::0::1::::<>Area2D<>::
 FloorCeiling.gd::GDScript::-1::1684434661::0::1::::<>Area2D<>::
 Left Wall.gd::GDScript::-1::1684434661::0::1::::<>Area2D<>::
 Main Menu.gd::GDScript::-1::1684434661::0::1::::<>Control<>::
+enemy.gd::GDScript::-1::1684443572::0::1::::<>RigidBody2D<>::
 Right Wall.gd::GDScript::-1::1684434661::0::1::::<>Area2D<>::
+Shark.gd::GDScript::-1::1684444220::0::1::::<>Area2D<>::
