@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ckiufsvdwe27h"]
+[gd_scene load_steps=6 format=3 uid="uid://ckiufsvdwe27h"]
 
 [ext_resource type="PackedScene" uid="uid://774pncqw7vdf" path="res://Scenes/Game.tscn" id="1_26t5y"]
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_fsfwq"]
+[ext_resource type="PackedScene" uid="uid://byx47bohmepk4" path="res://Scenes/Shark.tscn" id="2_47jkc"]
+[ext_resource type="PackedScene" uid="uid://4067d1i8j35n" path="res://Scenes/Fish.tscn" id="4_p4xpk"]
 
 [sub_resource type="Curve2D" id="Curve2D_cvyoc"]
 _data = {
@@ -11,19 +13,22 @@ point_count = 11
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fsfwq")
+mob_scene = ExtResource("2_47jkc")
 
 [node name="Game" parent="." instance=ExtResource("1_26t5y")]
 
-[node name="Shark Timer" type="Timer" parent="Game"]
+[node name="Fish" parent="." instance=ExtResource("4_p4xpk")]
+
+[node name="Shark Timer" type="Timer" parent="."]
 wait_time = 0.5
 
-[node name="Score Timer" type="Timer" parent="Game"]
+[node name="Score Timer" type="Timer" parent="."]
 
-[node name="Start Timer" type="Timer" parent="Game"]
+[node name="Start Timer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
 
-[node name="Start Position" type="Marker2D" parent="Game"]
+[node name="Start Position" type="Marker2D" parent="."]
 position = Vector2(240, 450)
 
 [node name="Shark Path" type="Path2D" parent="."]
@@ -32,3 +37,6 @@ curve = SubResource("Curve2D_cvyoc")
 [node name="Spawn Location" type="PathFollow2D" parent="Shark Path"]
 position = Vector2(1001, 101)
 rotation = -3.08979
+
+[connection signal="hit" from="Fish" to="." method="new_game"]
+[connection signal="hit" from="Fish" to="." method="game_over"]
